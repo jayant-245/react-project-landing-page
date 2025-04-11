@@ -1,5 +1,6 @@
 {
   "name": "configured-project",
+  "homepage": "https://jayant-245.github.io/company-landing-page/index.html",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,10 +8,13 @@
     "dev": "vite --open",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.487.0",
     "motion": "^12.4.4",
     "react": "^19.0.0",

@@ -4,7 +4,7 @@ import CaretUp from "../../icons/CaretUp";
 import TestimonialList from "./TestimonialList";
 
 export default function Testimonials() {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <section className="bg-gradient-to-top">
